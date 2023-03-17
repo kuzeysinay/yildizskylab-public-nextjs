@@ -1,0 +1,72 @@
+{
+	"arge": [
+		{
+			"name": "algolab",
+			"details": "Algo C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir.",
+			"logo": "SkylabPinkLogo.png"
+		},
+		{
+			"name": "airlab",
+			"details": "Yapay zekanın çeşitli alt disiplinlerinde araştırmalar yapan; makine öğrenmesi ve derin öğrenme alanlarında çalışan AR-GE ekibidir.",
+			"logo": "SkylabPinkLogo.png"
+		},
+		{
+			"name": "chainlab",
+			"details": "Chain C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir.",
+			"logo": "SkylabPinkLogo.png"
+		},
+		{
+			"name": "gamelab",
+			"details": "Gelişen oyun sektörüne ayak uydurup güncel teknolojileri yakalayan, etkinliklerle birlikte oyun sektörüne olan ilgiyi arttırmayı hedefleyen ve kendi oyunlarını geliştiren bir ekiptir.",
+			"logo": "SkylabPinkLogo.png"
+		},
+		{
+			"name": "mobilab",
+			"details": "Güncel teknolojileri kullanarak mobil programlamayı öğrenmeye ve bu konuda projeler geliştirmeyi hedefleyen dinamik bir ekiptir.",
+			"logo": "SkylabPinkLogo.png"
+		},
+		{
+			"name": "skysis",
+			"details": "Gömülü sistemler ve IoT üzerine projeler geliştirmeyi hedefleyen, bu alanda pratik ve teorik eğitimler, atölye calişmaları ve makale yazma gibi çalışmalar yapmayı amaçlayan ekiptir.",
+			"logo": "SkylabPinkLogo.png"
+		},
+		{
+			"name": "skysec",
+			"details": "SKY LAB Bilgisayar Bilimleri Kulübünün siber güvenlik alanında çalışan ekibidir. Ekip siber güvenlik alanında kendini geliştirmeyi ve çeşitli projeler üretmeyi amaçlamaktadır. Yazılımsal ağırlıklı olmak üzere bir çok proje üzerinde çalışılmaktadır. Bu çalışmalar ile birlikte makale yazma çalışmaları da bulunmaktadır.",
+			"logo": "SkylabPinkLogo.png"
+		},
+		{
+			"name": "weblab",
+			"details": "SKY LAB bilgisayar bilimleri kulübünün Ar-Ge ekiplerinin arasında bir ekip olarak web ihtiyaçlarını karşılamaya yönelik kurulmuş Web geliştirme ekibidir. Hem front-end hem de back-end alanlarında geliştirme yaparak projeler oluşturmayı amaçlamaktayız.",
+			"logo": "SkylabPinkLogo.png"
+		}
+	],
+
+	"social": [
+		{
+			"name": "organizasyon",
+			"logo": "SkylabPinkLogo.png",
+			"details": "Organizasyon C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir."
+		},
+		{
+			"name": "sosyal sorumluluk",
+			"logo": "SkylabPinkLogo.png",
+			"details": "Sosyal C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir."
+		},
+		{
+			"name": "skymedia",
+			"logo": "SkylabPinkLogo.png",
+			"details": "Skymedia C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir."
+		},
+		{
+			"name": "gecekodu ekibi",
+			"logo": "SkylabPinkLogo.png",
+			"details": "Gecekodu C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir."
+		},
+		{
+			"name": "socilab",
+			"logo": "SkylabPinkLogo.png",
+			"details": "Social C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir."
+		}
+	]
+}
