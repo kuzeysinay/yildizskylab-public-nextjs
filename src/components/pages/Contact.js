@@ -69,7 +69,6 @@ const Contact = forwardRef(function Contact(props, ref) {
 					method='POST'
 					name='contact'
 					data-netlify='true'
-					data-netlify-recaptcha='true'
 					onSubmit={handleSubmit}
 				>
 					<input
@@ -105,7 +104,6 @@ const Contact = forwardRef(function Contact(props, ref) {
 						rows='5'
 						className='mt-4 md:mt-9'
 					></textarea>
-					<div data-netlify-recaptcha='true'></div>
 					<button
 						className='appearance-none outline-none font-bebasNeue text-base md:text-xl tracking-widest w-full pb-[0.4rem] lg:pb-[0.8rem] pt-[0.6rem] lg:pt-4 mt-2 lg:hover:bg-[#f4ecff] bg-customLightPink text-customDarkPurple '
 						type='submit'
