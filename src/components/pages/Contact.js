@@ -35,14 +35,23 @@ const Contact = forwardRef(function Contact(props, ref) {
 		///////////////////////////////////////
 		//   Fetch with req.body = newData   //
 		///////////////////////////////////////
+		// console.log(formData);
 
-		console.log(formData);
-		setFormData({
-			fullname: '',
-			email: '',
-			GSM: '',
-			message: '',
-		});
+		fetch('/', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: new URLSearchParams(formData).toString(),
+		})
+			.then(() => {
+				console.log('Form successfully submitted');
+				setFormData({
+					fullname: '',
+					email: '',
+					GSM: '',
+					message: '',
+				});
+			})
+			.catch(error => console.error(error));
 	};
 
 	return (
@@ -57,7 +66,7 @@ const Contact = forwardRef(function Contact(props, ref) {
 					method='POST'
 					name='contact'
 					data-netlify='true'
-					// onSubmit={handleSubmit}
+					onSubmit={handleSubmit}
 				>
 					<input
 						onChange={e => handleChange(e)}
