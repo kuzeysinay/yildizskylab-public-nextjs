@@ -40,7 +40,10 @@ const Contact = forwardRef(function Contact(props, ref) {
 		fetch('/', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: new URLSearchParams(formData).toString(),
+			body: new URLSearchParams({
+				'form-name': 'contact',
+				...formData,
+			}).toString(),
 		})
 			.then(() => {
 				console.log('Form successfully submitted');
