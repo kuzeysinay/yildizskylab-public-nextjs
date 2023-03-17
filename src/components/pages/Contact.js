@@ -54,9 +54,10 @@ const Contact = forwardRef(function Contact(props, ref) {
 				<h1 className='text-4xl lg:text-6xl'>BİZE ULAŞIN</h1>
 				<form
 					className='w-full font-inter font-normal pt-12'
+					method='POST'
 					name='contact'
 					data-netlify='true'
-					onSubmit={handleSubmit}
+					// onSubmit={handleSubmit}
 				>
 					<input
 						onChange={e => handleChange(e)}
