@@ -1,13 +1,16 @@
 'use client';
 import React, {
 	forwardRef,
+	useEffect,
 	useImperativeHandle,
 	useRef,
 	useState,
 } from 'react';
+import { useForm } from '@formspree/react';
 
 const Contact = forwardRef(function Contact(props, ref) {
 	const pageRef = useRef(null);
+	const [state, handleSubmit] = useForm('contactForm');
 
 	useImperativeHandle(ref, () => {
 		return {
@@ -29,33 +32,38 @@ const Contact = forwardRef(function Contact(props, ref) {
 		setFormData(newData);
 	};
 
-	const handleSubmit = e => {
-		e.preventDefault();
+	// const handleSubmit = e => {
+	// 	e.preventDefault();
 
-		///////////////////////////////////////
-		//   Fetch with req.body = newData   //
-		///////////////////////////////////////
-		// console.log(formData);
+	// 	///////////////////////////////////////
+	// 	//   Fetch with req.body = newData   //
+	// 	///////////////////////////////////////
+	// 	// console.log(formData);
 
-		fetch('/', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: new URLSearchParams({
-				'form-name': 'contact',
-				...formData,
-			}).toString(),
-		})
-			.then(() => {
-				console.log('Form successfully submitted');
-				setFormData({
-					fullname: '',
-					email: '',
-					GSM: '',
-					message: '',
-				});
-			})
-			.catch(error => console.error(error));
-	};
+	// 	fetch('/', {
+	// 		method: 'POST',
+	// 		headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+	// 		body: new URLSearchParams({
+	// 			'form-name': 'contact',
+	// 			...formData,
+	// 		}).toString(),
+	// 	})
+	// 		.then(() => {
+	// 			console.log('Form successfully submitted');
+	// 			setFormData({
+	// 				fullname: '',
+	// 				email: '',
+	// 				GSM: '',
+	// 				message: '',
+	// 			});
+	// 		})
+	// 		.catch(error => console.error(error));
+	// };
+
+	useEffect(() => {
+		if (state.succeeded)
+			setFormData({ fullname: '', email: '', GSM: '', message: '' });
+	}, [state]);
 
 	return (
 		<section
@@ -68,7 +76,7 @@ const Contact = forwardRef(function Contact(props, ref) {
 					className='w-full font-inter font-normal pt-12'
 					method='POST'
 					name='contact'
-					data-netlify='true'
+					// data-netlify='true'
 					onSubmit={handleSubmit}
 				>
 					<input
@@ -107,6 +115,7 @@ const Contact = forwardRef(function Contact(props, ref) {
 					<button
 						className='appearance-none outline-none font-bebasNeue text-base md:text-xl tracking-widest w-full pb-[0.4rem] lg:pb-[0.8rem] pt-[0.6rem] lg:pt-4 mt-2 lg:hover:bg-[#f4ecff] bg-customLightPink text-customDarkPurple '
 						type='submit'
+						disabled={state.submitting}
 					>
 						GÖNDER
 					</button>
