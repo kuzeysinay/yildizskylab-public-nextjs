@@ -142,7 +142,7 @@ const Teams = forwardRef(function Teams(props, ref) {
 					</div>
 				</div>
 			</div>
-			<DownArrow />
+			{/* <DownArrow /> */}
 		</section>
 	);
 });

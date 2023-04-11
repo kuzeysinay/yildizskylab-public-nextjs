@@ -127,7 +127,7 @@ const Nav = ({
 					</button>
 				</li>
 				<li className='text-customAccent'>
-					<a href='#a' className='tracking-[0.10em]'>
+					<a href='#' className='tracking-[0.10em]'>
 						KAYIT OL/GİRİŞ YAP
 					</a>
 				</li>
