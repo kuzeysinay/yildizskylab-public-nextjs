@@ -29,7 +29,7 @@ function App() {
 						<Nav
 							refs={{ aboutRef, landingRef, teamsRef, eventsRef, contactRef }}
 						/>
-						<div className=' h-screen overflow-y-scroll scroll-smooth snap-mandatory snap-y justify-center w-full'>
+						<div className=' h-screen overflow-y-scroll scroll-smooth snap-proximity snap-y justify-center w-full'>
 							<Menu
 								refs={{ aboutRef, landingRef, teamsRef, eventsRef, contactRef }}
 							/>
