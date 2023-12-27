@@ -1,72 +1,72 @@
 {
-	"arge": [
-		{
-			"name": "algolab",
-			"details": "Algo C dili olmak üzere çeşitli programlama dillerinde kendini geliştiren bir ekiptir. Algoritmalar üzerinde yoğunlaşan, bunun karşılığında da yarışmalara katılıp eğitimler veren ve kulüp yarışmaları için soru havuzu oluşturan ekiptir.",
-			"logo": "SkylabPinkLogo.png"
-		},
-		{
-			"name": "airlab",
-			"details": "Yapay zekanın çeşitli alt disiplinlerinde araştırmalar yapan; makine öğrenmesi ve derin öğrenme alanlarında çalışan AR-GE ekibidir.",
-			"logo": "SkylabPinkLogo.png"
-		},
-		{
-			"name": "chainlab",
-			"details": "Blockchain, Smart Contract, kriptoloji, WEB 1, WEB 2, WEB 3, NFT, Metaverse gibi alanlara ilgisi olan, kendini ve takım arkadaşlarını bu alanlarda geliştirmeyi hedefleyen bir ekiptir.",
-			"logo": "SkylabPinkLogo.png"
-		},
-		{
-			"name": "gamelab",
-			"details": "Gelişen oyun sektörüne ayak uydurup güncel teknolojileri yakalayan, etkinliklerle birlikte oyun sektörüne olan ilgiyi arttırmayı hedefleyen ve kendi oyunlarını geliştiren bir ekiptir.",
-			"logo": "SkylabPinkLogo.png"
-		},
-		{
-			"name": "mobilab",
-			"details": "Güncel teknolojileri kullanarak mobil programlamayı öğrenmeye ve bu konuda projeler geliştirmeyi hedefleyen dinamik bir ekiptir.",
-			"logo": "SkylabPinkLogo.png"
-		},
-		{
-			"name": "skysis",
-			"details": "Gömülü sistemler ve IoT üzerine projeler geliştirmeyi hedefleyen, bu alanda pratik ve teorik eğitimler, atölye calişmaları ve makale yazma gibi çalışmalar yapmayı amaçlayan ekiptir.",
-			"logo": "SkylabPinkLogo.png"
-		},
-		{
-			"name": "skysec",
-			"details": "SKY LAB Bilgisayar Bilimleri Kulübünün siber güvenlik alanında çalışan ekibidir. Ekip siber güvenlik alanında kendini geliştirmeyi ve çeşitli projeler üretmeyi amaçlamaktadır. Yazılımsal ağırlıklı olmak üzere bir çok proje üzerinde çalışılmaktadır. Bu çalışmalar ile birlikte makale yazma çalışmaları da bulunmaktadır.",
-			"logo": "SkylabPinkLogo.png"
-		},
-		{
-			"name": "weblab",
-			"details": "SKY LAB bilgisayar bilimleri kulübünün Ar-Ge ekiplerinin arasında bir ekip olarak web ihtiyaçlarını karşılamaya yönelik kurulmuş Web geliştirme ekibidir. Hem front-end hem de back-end alanlarında geliştirme yaparak projeler oluşturmayı amaçlamaktayız.",
-			"logo": "SkylabPinkLogo.png"
-		}
-	],
+  "arge": [
+    {
+      "name": "algolab",
+      "details": "Algoritma geliştirme, mantıksal ve matematiksel problemlerin optimize çözümleri üzerine çalışan, programlama yarışmalarına katılan, kendilerini competitive-programming alanında geliştiren ekibimiz.",
+      "logo": "SkylabPinkLogo.png"
+    },
+    {
+      "name": "airlab",
+      "details": "Yapay zekanın çeşitli alt disiplinlerinde araştırmalar yapan; makine öğrenmesi ve derin öğrenme alanlarında çalışan AR-GE ekibidir.",
+      "logo": "SkylabPinkLogo.png"
+    },
+    {
+      "name": "chainlab",
+      "details": "Blockchain, smart contract, Web1, Web2, Web3, kriptoloji, metaverse, nft gibi alanlarda belirli eğitimleri izleyen ve akran öğrenmesini esas alan, bol bol proje geliştirip her seferinde kendini ileri taşımayı hedefeyen ekibimiz",
+      "logo": "SkylabPinkLogo.png"
+    },
+    {
+      "name": "gamelab",
+      "details": "Hem mobil hem de masaüstü oyun geliştiren bunların eğitimini veren, Game Jamlere katılan ve kendi aralarında düzenleyen; Steam, PlayStore gibi çeşitli platformlarda oyunlarını paylaşmayı hedefleyen ekibimiz.",
+      "logo": "SkylabPinkLogo.png"
+    },
+    {
+      "name": "mobilab",
+      "details": "Flutter Framework’ü ile cross-platform uygulama geliştiren, bunun eğitimini veren ve projeler geliştirerek bilgilerini pratiğe döken AR-GE ekibidir.",
+      "logo": "SkylabPinkLogo.png"
+    },
+    {
+      "name": "skysis",
+      "details": "Gömülü sistemler ve IoT üzerine projeler geliştirmeyi hedefleyen; bu alanda pratik ve teorik eğitimler, atölye çalışmaları ve makale yazma gibi çalışmalar yapmayı amaçlayan ekiptir.",
+      "logo": "SkylabPinkLogo.png"
+    },
+    {
+      "name": "skysec",
+      "details": "Siber güvenlik alanında makale yazma, tool geliştirme ve çeşitli etkinlikler düzenleme üzerine çalışan; aynı zamanda ekip üyelerine bu alanda hem teorik hem de pratik eğitim veren ekibimizdir.",
+      "logo": "SkylabPinkLogo.png"
+    },
+    {
+      "name": "weblab",
+      "details": "Hem Front End, hem de Back End alanında araştırmalar yapan, eğitimler düzenleyen, projeler üreterek kendilerini geliştiren AR-GE ekibidir.",
+      "logo": "SkylabPinkLogo.png"
+    }
+  ],
 
-	"social": [
-		{
-			"name": "organizasyon",
-			"logo": "SkylabPinkLogo.png",
-			"details": "Çok yakında..."
-		},
-		{
-			"name": "sosyal sorumluluk",
-			"logo": "SkylabPinkLogo.png",
-			"details": "Çok yakında..."
-		},
-		{
-			"name": "skymedia",
-			"logo": "SkylabPinkLogo.png",
-			"details": "Çok yakında..."
-		},
-		{
-			"name": "gecekodu ekibi",
-			"logo": "SkylabPinkLogo.png",
-			"details": "Çok yakında..."
-		},
-		{
-			"name": "socilab",
-			"logo": "SkylabPinkLogo.png",
-			"details": "Çok yakında..."
-		}
-	]
+  "social": [
+    {
+      "name": "organizasyon",
+      "logo": "SkylabPinkLogo.png",
+      "details": "Organizasyon ekibi olarak sene içerisinde ARTLAB : Yapay Zeka Zirvesi, SKYDAYS : Türkiye'nin En Büyük Siber Güvenlik Zirvesi, YILDIZ JAM : Oyun Geliştirme Zirvesi ve Yarışması olmak üzere üç büyük organizasyon düzenliyoruz. Bunların yanı sıra mezunlarımızla buluştuğumuz, iş hayatını tanımamızda ve bağlantılar kurmamızda yardımcı olan söyleşi temalı BİZBİZE etkinliğimiz ve sosyal sorumluluklarımızı yerine getirmemizi sağlayan etkinliklerimizle hem kulübümüze hem üniversitemize sosyal ve akademik anlamda değer sağlamayı amaçlıyoruz."
+    },
+    {
+      "name": "sosyal sorumluluk",
+      "logo": "SkylabPinkLogo.png",
+      "details": "Sosyal sorumluluk projelerine katılmak isteyenleri bir araya getiriyoruz ve Sosyal Sorumluluk ekibi olarak çeşitli yardım etkinlikleri ve projeleri koordine ediyoruz."
+    },
+    {
+      "name": "sky media",
+      "logo": "SkylabPinkLogo.png",
+      "details": "Grafik tasarım, animasyon ve video düzenleme gibi alanlarda eğitimler ve çalışmalar yürütüp kulübümüzün görsel kimliğini oluşturmak, etkileyici medya içerikleri üretmek ve kulübümüzün hikayesini anlatmak için çalışıyoruz"
+    },
+    {
+      "name": "gecekodu",
+      "logo": "SkylabPinkLogo.png",
+      "details": "Haftanın bir günü toplanarak sabaha kadar ilgi alanlarımıza bağlı olarak zaman zaman ekipler halinde zaman zaman bireysel çalışmalar yapıyoruz. Farklı alanlarda Workshop veriyor ve gruplar halinde veya bireysel çalışmalarla projeler geliştiriyoruz."
+    },
+    {
+      "name": "socilab",
+      "logo": "SkylabPinkLogo.png",
+      "details": "Sosyalleşme ve etkileşim konusunda yaratıcı fikirlerle Socilab ekibi olarak kulüp üyelerinin keyifli vakit geçirebileceği etkinlikler düzenlemek ve kulüp içi bağları güçlendirmek için çalışıyoruz."
+    }
+  ]
 }
