@@ -1,9 +1,9 @@
 'use client';
 import React, {
-	forwardRef,
-	useImperativeHandle,
-	useRef,
-	useState,
+  forwardRef,
+  useImperativeHandle,
+  useRef,
+  useState,
 } from 'react';
 // import DownArrow from '../DownArrow';
 import dashedLine from '@/assets/dashedLine.png';
@@ -11,39 +11,39 @@ import events from '@/data/events.json';
 import Image from 'next/image';
 
 const Events = forwardRef(function Events(props, ref) {
-	const [selectEvent, setSelectEvent] = useState(0);
+  const [selectEvent, setSelectEvent] = useState(0);
 
-	const pageRef = useRef(null);
+  const pageRef = useRef(null);
 
-	useImperativeHandle(ref, () => {
-		return {
-			scrollIntoView() {
-				pageRef.current.scrollIntoView();
-			},
-		};
-	});
+  useImperativeHandle(ref, () => {
+    return {
+      scrollIntoView() {
+        pageRef.current.scrollIntoView();
+      },
+    };
+  });
 
-	return (
-		<section
-			className='snap-start relative bg-customDarkPurple pt-36 h-screen'
-			ref={pageRef}
-		>
-			<div className='w-screen hidden lg:flex justify-center mt-10 mb-24'>
-				<h2 className='text-customAccent text-5xl'>GELECEK ETKİNLİKLER</h2>
-			</div>
-			<div className='overflow-y-hidden relative h-full'>
-				{/* <div className='absolute left-[15%] lg:left-1/2 lg:-translate-x-1/2 mt-14 mb-36'>
+  return (
+    <section
+      className='snap-start relative bg-customDarkPurple pt-36 h-screen'
+      ref={pageRef}
+    >
+      <div className='w-screen hidden lg:flex justify-center mt-10 mb-24'>
+        <h2 className='text-customAccent text-5xl'>GELECEK ETKİNLİKLER</h2>
+      </div>
+      <div className='overflow-y-hidden relative h-full'>
+        {/* <div className='absolute left-[15%] lg:left-1/2 lg:-translate-x-1/2 mt-14 mb-36'>
 					<Image src={dashedLine} alt='line' />
 				</div> */}
-				<div className='w-full h-full flex justify-center items-center'>
-					<span className='md:hidden text-2xl -mt-24'>
-						ETKİNLİKLER ÇOK YAKINDA...
-					</span>
-					<span className='hidden md:block text-2xl -mt-80'>
-						ÇOK YAKINDA...
-					</span>
-				</div>
-				{/* {events.map((event, index) => {
+        <div className='w-full h-full flex justify-center items-center'>
+          <span className='md:hidden text-2xl -mt-24'>
+            ETKİNLİKLER ÇOK YAKINDA...
+          </span>
+          <span className='hidden md:block text-2xl -mt-80'>
+            ÇOK YAKINDA...
+          </span>
+        </div>
+        {/* {events.map((event, index) => {
 					return (
 						<div
 							key={index}
@@ -106,11 +106,11 @@ const Events = forwardRef(function Events(props, ref) {
 						</div>
 					);
 				})} */}
-			</div>
-			<div className='h-36'></div>
-			{/* <DownArrow /> */}
-		</section>
-	);
+      </div>
+      {/* <div className='h-36'></div> */}
+      {/* <DownArrow /> */}
+    </section>
+  );
 });
 
 export default Events;
