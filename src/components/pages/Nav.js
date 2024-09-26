@@ -8,7 +8,7 @@ import Image from 'next/image';
 // smoothscroll.polyfill();
 
 const Nav = ({
-	refs: { aboutRef, landingRef, teamsRef, eventsRef, contactRef, announcementsRef, newsRef, boardRef },
+	refs: { aboutRef, landingRef, teamsRef, eventsRef, contactRef, announcementsRef, newsRef, boardRef, sitesRef },
 }) => {
 	const [menuOpened, setMenuOpened] = useRecoilState(menuState);
 	const handleScroll = ref => {
@@ -130,7 +130,7 @@ const Nav = ({
 				<li>
 					<button
 						className='tracking-[0.10em]'
-						onClick={() => handleScroll(boardRef)}
+						onClick={() => handleScroll(sitesRef)}
 					>
 						SİTELERİMİZ
 					</button>

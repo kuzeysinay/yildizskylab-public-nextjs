@@ -5,24 +5,23 @@ import sitesData from './sitesData';
 const SitesPage = forwardRef(function SitesPage(props, ref) {
   const pageRef = useRef(null);
 
-  useImperativeHandle(ref, () => {
-    return {
-      scrollIntoView() {
-        pageRef.current.scrollIntoView();
-      },
-    };
-  });
+  useImperativeHandle(ref, () => ({
+    scrollIntoView() {
+      pageRef.current.scrollIntoView({ behavior: 'smooth' });
+    },
+  }));
+
   return (
     <section
-      className="h-screen w-screen snap-start mt-72 lg:mt-96 pt-28 lg:pt-36 bg-customDarkPurple"
+      className="w-screen snap-start pt-28 lg:pt-36 bg-customDarkPurple "
       ref={pageRef}
     >
-      {/* Başlık kısmı */}
+      {/* Header */}
       <div className="w-screen hidden lg:flex lg:justify-center lg:mt-10 lg:mb-24">
         <h2 className="text-customAccent text-3xl lg:text-5xl">SİTELER</h2>
       </div>
       
-      {/* Grid yapısı, her siteyi grid içerisinde gösterir */}
+      {/* Sites Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 justify-items-center relative z-20">
         {sitesData.map((site, index) => (
           <a
