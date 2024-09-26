@@ -65,10 +65,11 @@ function App() {
 				<NewsPage ref={newsRef} />
 				<BoardPage ref={boardRef} />
 				<SitesPage ref={sitesRef} />
+				<Footer />
 			  </div>
 			</div>
 			{/* Add Footer outside the main flex container */}
-			<Footer />
+			
 		  </div>
 		</FormspreeProvider>
 	  </>

@@ -119,12 +119,12 @@ const Teams = forwardRef(function Teams(props, ref) {
 											teamIndex === index ? 'ring-8' : null
 										} p-2 cursor-pointer bg-customLightPink overflow-hidden rounded-[50%]`}
 									>
-										<Image
+										<img
 											onClick={() => ''}
-											src={Logo}
-											width={51}
-											height={51}
-											className='object-cover  hue-rotate-[320deg] brightness-[0.2]'
+											src={team.logo}
+											width={75}
+											height={75}
+											className='object-cover rounded-full'
 											alt='logo'
 										/>
 									</div>
