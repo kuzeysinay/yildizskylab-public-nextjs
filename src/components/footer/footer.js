@@ -34,7 +34,10 @@ const Footer = () => {
       </div>
 
       <div className='footer-bottom relative'>
-        <p className='footer-year mb-6'>2024</p>
+      <p className='footer-text'>
+                Weblab tarafından geliştirildi.
+            </p>
+            <p className='footer-year mb-6'>2024 ©</p>
       </div>
     </div>
   );

@@ -69,13 +69,7 @@ function NewsDetailPage({ params }) {
           <p className="text-gray-200 mb-4">
             Yayınlanma Tarihi: {new Date(item.publish_date).toLocaleDateString('tr-TR')}
           </p>
-          <div className="mb-4">
-            <img
-              src={`data:${item.image_type};base64,${item.image_url}`}
-              alt={item.title}
-              className="w-full mx-auto h-auto"
-            />
-          </div>
+          
           <div
             className="prose prose-lg text-white"
             dangerouslySetInnerHTML={{ __html: item.description }}
