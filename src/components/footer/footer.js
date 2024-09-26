@@ -12,7 +12,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <div className='footer-cover'>
-      <div className='footer-top'>
+      <div className='footer-top relative'>
         
         <div className='footer-links-icon-container'>
           <a href='https://www.instagram.com/ytuskylab'>
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='footer-bottom'>
+      <div className='footer-bottom relative'>
         <p className='footer-year mb-6'>2024</p>
       </div>
     </div>

@@ -10,69 +10,69 @@ import { FormspreeProvider } from '@formspree/react';
 import NewsPage from '@/components/pages/News';
 import BoardPage from '@/components/pages/board/Board';
 import SitesPage from '@/components/pages/sites/Sites';
-import Footer from '@/components/footer/footer';
+import Footer from '../components/footer/footer';
 
 
 function App() {
-	const landingRef = useRef(null);
-	const aboutRef = useRef(null);
-	const teamsRef = useRef(null);
-	const eventsRef = useRef(null);
-	const contactRef = useRef(null);
-	const announcementsRef = useRef(null);
-	const newsRef = useRef(null);
-	const boardRef = useRef(null);
-	const sitesRef = useRef(null);
-  
-	return (
-	  <>
-		<FormspreeProvider project='2170976576030637424'>
-		  <Head>
-			<title>Sky Lab</title>
-		  </Head>
-		  <div className='App'>
-			<div className='font-bebasNeue relative flex flex-col lg:flex-row justify-center text-customLightPink tracking-[0.16em] min-h-screen'>
-			  <Nav
-				refs={{
-				  aboutRef,
-				  landingRef,
-				  teamsRef,
-				  eventsRef,
-				  contactRef,
-				  announcementsRef,
-				  newsRef,
-				  boardRef,
-				  sitesRef,
-				}}
-			  />
-			  <div className='flex-grow overflow-y-auto scroll-smooth snap-proximity snap-y justify-center w-full h-auto lg:h-screen'>
-				<Menu
-				  refs={{
-					aboutRef,
-					landingRef,
-					teamsRef,
-					eventsRef,
-					contactRef,
-					announcementsRef,
-					newsRef,
-					boardRef,
-					sitesRef,
-				  }}
-				/>
-				<LandingPage ref={landingRef} />
-				<AboutPage ref={aboutRef} />
-				<Teams ref={teamsRef} />
-				<NewsPage ref={newsRef} />
-				<BoardPage ref={boardRef} />
-				<SitesPage ref={sitesRef} />
-			  </div>
-			</div>
-			{/* Add Footer outside the main flex container */}
-			<Footer />
-		  </div>
-		</FormspreeProvider>
-	  </>
-	);
-  }
+  const landingRef = useRef(null);
+  const aboutRef = useRef(null);
+  const teamsRef = useRef(null);
+  const eventsRef = useRef(null);
+  const contactRef = useRef(null);
+  const announcementsRef = useRef(null);
+  const newsRef = useRef(null);
+  const boardRef = useRef(null);
+  const sitesRef = useRef(null);
+
+  return (
+    <>
+      <FormspreeProvider project='2170976576030637424'>
+        <Head>
+          <title>Sky Lab</title>
+        </Head>
+        <div className='App'>
+          <div className='font-bebasNeue relative flex flex-col lg:flex-row justify-center text-customLightPink tracking-[0.16em] min-h-screen'>
+            <Nav
+              refs={{
+                aboutRef,
+                landingRef,
+                teamsRef,
+                eventsRef,
+                contactRef,
+                announcementsRef,
+                newsRef,
+                boardRef,
+                sitesRef,
+              }}
+            />
+            <div className='flex-grow overflow-y-auto scroll-smooth snap-proximity snap-y justify-center w-full h-auto lg:h-screen'>
+              <Menu
+                refs={{
+                  aboutRef,
+                  landingRef,
+                  teamsRef,
+                  eventsRef,
+                  contactRef,
+                  announcementsRef,
+                  newsRef,
+                  boardRef,
+                  sitesRef,
+                }}
+              />
+              <LandingPage ref={landingRef} />
+              <AboutPage ref={aboutRef} />
+              <Teams ref={teamsRef} />
+              <NewsPage ref={newsRef} />
+              <BoardPage ref={boardRef} />
+              <SitesPage ref={sitesRef} />
+            </div>
+          </div>
+         
+          <Footer/>
+        </div>
+      </FormspreeProvider>
+    </>
+  );
+}
 
 export default App;
