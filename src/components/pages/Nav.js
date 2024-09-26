@@ -8,7 +8,7 @@ import Image from 'next/image';
 // smoothscroll.polyfill();
 
 const Nav = ({
-	refs: { aboutRef, landingRef, teamsRef, eventsRef, contactRef },
+	refs: { aboutRef, landingRef, teamsRef, eventsRef, contactRef, announcementsRef, newsRef, boardRef },
 }) => {
 	const [menuOpened, setMenuOpened] = useRecoilState(menuState);
 	const handleScroll = ref => {
@@ -20,7 +20,7 @@ const Nav = ({
 	}, []);
 
 	return (
-		<div className=' h-24 flex lg:h-36 w-full fixed top-0 flex-row items-center justify-center lg:justify-between container z-50'>
+		<div className='px-3 h-24 flex lg:h-36 w-full fixed top-0 flex-row items-center justify-center lg:justify-between container z-50'>
 			<div className='absolute z-40 w-screen h-24 flex items-center'>
 				<div
 					onClick={() => setMenuOpened(!menuOpened)}
@@ -110,27 +110,24 @@ const Nav = ({
 						EKİPLER
 					</button>
 				</li>
+				
 				<li>
 					<button
 						className='tracking-[0.10em]'
-						onClick={() => handleScroll(eventsRef)}
+						onClick={() => handleScroll(newsRef)}
 					>
-						ETKİNLİKLER
+						HABERLER
 					</button>
 				</li>
 				<li>
 					<button
 						className='tracking-[0.10em]'
-						onClick={() => handleScroll(contactRef)}
+						onClick={() => handleScroll(boardRef)}
 					>
-						İLETİŞİM
+						YÖNETİM KURULUMUZ
 					</button>
 				</li>
-				<li className='text-customAccent'>
-					<a href='#' className='tracking-[0.10em]'>
-						KAYIT OL/GİRİŞ YAP
-					</a>
-				</li>
+				
 			</ul>
 		</div>
 	);

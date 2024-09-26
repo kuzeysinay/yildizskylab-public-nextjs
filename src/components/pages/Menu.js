@@ -8,7 +8,7 @@ import Image from 'next/image';
 // smoothscroll.polyfill();
 
 const Menu = ({
-	refs: { aboutRef, landingRef, teamsRef, eventsRef, contactRef },
+	refs: { aboutRef, landingRef, teamsRef, eventsRef, contactRef, announcementsRef, newsRef, boardRef },
 }) => {
 	const [menuOpened, setMenuOpened] = useRecoilState(menuState);
 	const handleScroll = ref => {
@@ -55,33 +55,32 @@ const Menu = ({
 						EKİPLER
 					</button>
 				</li>
+				
 				<li>
 					<button
 						className='tracking-[0.10em]'
 						onClick={() => {
-							handleScroll(eventsRef);
+							handleScroll(newsRef);
 							setMenuOpened(false);
 						}}
 					>
-						ETKİNLİKLER
+						HABERLER
 					</button>
 				</li>
 				<li>
 					<button
 						className='tracking-[0.10em]'
 						onClick={() => {
-							handleScroll(contactRef);
+							handleScroll(boardRef);
 							setMenuOpened(false);
 						}}
 					>
-						İLETİŞİM
+						YÖNETİM KURULUMUZ
 					</button>
 				</li>
-				<li className='text-customLightPurple bg-customDarkPurple ring-8 ring-customDarkPurple'>
-					<a href='#a' className='tracking-[0.10em]'>
-						KAYIT OL/GİRİŞ YAP
-					</a>
-				</li>
+				
+				
+				
 			</ul>
 			<div className='absolute w-40 bottom-8'>
 				<Image src={logo} alt='' />

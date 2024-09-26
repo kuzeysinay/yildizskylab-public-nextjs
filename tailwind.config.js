@@ -14,6 +14,7 @@ module.exports = {
 			},
 			colors: {
 				customDarkPurple: '#06032C',
+				customDarkerPurple: '#050221',
 				customLightPink: '#EADAFF',
 				customLightPurple: '#7C77B3',
 				customAccent: '#27A68E',
@@ -24,5 +25,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/typography'),],
 };
