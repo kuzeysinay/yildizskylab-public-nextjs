@@ -127,6 +127,14 @@ const Nav = ({
 						YÖNETİM KURULUMUZ
 					</button>
 				</li>
+				<li>
+					<button
+						className='tracking-[0.10em]'
+						onClick={() => handleScroll(boardRef)}
+					>
+						SİTELERİMİZ
+					</button>
+				</li>
 				
 			</ul>
 		</div>

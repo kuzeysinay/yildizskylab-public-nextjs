@@ -4,13 +4,12 @@ import Head from 'next/head';
 import LandingPage from '@/components/pages/LandingPage';
 import Teams from '@/components/pages/Teams';
 import Nav from '@/components/pages/Nav';
-import Contact from '@/components/pages/Contact';
-import Events from '@/components/pages/Events';
 import Menu from '@/components/pages/Menu';
 import AboutPage from '@/components/pages/About';
 import { FormspreeProvider } from '@formspree/react';
 import NewsPage from '@/components/pages/News';
 import BoardPage from '@/components/pages/board/Board';
+import SitesPage from '@/components/pages/sites/Sites';
 
 function App() {
 	const landingRef = useRef(null);
@@ -21,6 +20,7 @@ function App() {
 	const announcementsRef = useRef(null);
 	const newsRef = useRef(null);
 	const boardRef = useRef(null);
+	const sitesRef = useRef(null);
 
 	return (
 		<>
@@ -31,18 +31,18 @@ function App() {
 				<div className='App'>
 					<div className='font-bebasNeue relative  flex flex-row justify-center text-customLightPink tracking-[0.16em]'>
 						<Nav
-							refs={{ aboutRef, landingRef, teamsRef, eventsRef, contactRef, announcementsRef, newsRef, boardRef }}
+							refs={{ aboutRef, landingRef, teamsRef, eventsRef, contactRef, announcementsRef, newsRef, boardRef, sitesRef }}
 						/>
 						<div className=' h-screen overflow-y-scroll scroll-smooth snap-proximity snap-y justify-center w-full'>
 							<Menu
-								refs={{ aboutRef, landingRef, teamsRef, eventsRef, contactRef, announcementsRef, newsRef, boardRef }}
+								refs={{ aboutRef, landingRef, teamsRef, eventsRef, contactRef, announcementsRef, newsRef, boardRef, sitesRef }}
 							/>
 							<LandingPage ref={landingRef} />
 							<AboutPage ref={aboutRef} />
 							<Teams ref={teamsRef} />
 							<NewsPage ref={newsRef}/>
 							<BoardPage ref={boardRef}/>
-							
+							<SitesPage ref={sitesRef}/>
 		
 						</div>
 					</div>
